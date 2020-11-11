@@ -39,9 +39,6 @@
     padding: 0 20px 0 40px;
     margin: 75px 20px 175px 20px;
   }
-	.Contact {
-    /*padding: 0 40px 0 40px;*/
-	}
 	li {
 		display: inline;
 	}
@@ -100,7 +97,7 @@
   <span class="BioText">
     <h2>About Me</h2>
     <p class="BioTextParagraph">I was born in 1975 in New Jersey.  I currently live in the Des Moines metro in Iowa with my wife and our three children.  I started my career as a software engineer in 1998.  I have developed test tools and frameworks in a variety of programming languages:  Python, C, C++, and Perl.  I have a passion for and specialize in automated test systems.<br /><br />
-  <button>Like</button>
+  <button onclick="like_function()">Like</button>
     </p>
   </span>
 </div>
@@ -113,8 +110,8 @@
 	</span>
 </div>
 <script>
-  $("button").on("click", function() {
+	function like_function() {
     alert("Thanks for the like!");
-  });
+  }
 </script>
 </body>
