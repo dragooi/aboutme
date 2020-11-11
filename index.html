@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<style>
+  header {
+    text-align: center;
+    background: url('https://i.imgur.com/gKrGhdU.jpg');
+    background-size: cover;
+    height: 400px;
+  }
+  body {
+    background: #0a0a0a;
+      color: white;
+  }
+  h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 40px;
+    color: black;
+  }
+  h2 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 30px;
+    padding-top: 200px;
+  }
+  .AboutMeSection {
+    padding: 40px 0 10px 0;
+  }
+  .BioImage {
+    float: left;
+    margin: 0 40px 0 0;
+  }
+  .BioText {
+    text-align: justify;
+    font-size: 18px;
+  }
+  .BioTextParagraph {
+    padding: 0 20px 0 40px;
+    margin: 75px 20px 175px 20px;
+  }
+  ul {
+      float: center;
+  }
+  li {
+    display: inline;
+    font-size: 24px;  
+    padding: 0 40px 0 40px;
+  }
+  button {
+    float: right;
+  }
+
+</style>
+<title>Introducing Ian Dragoo</title>
+</head>
+<body>
+<header>
+  <h1>Introducing Ian Dragoo</h1>
+</header>
+<div class="AboutMeSection">
+  <span class="BioImage">
+    <img src="https://i.imgur.com/4VtdrUg.jpg">
+  </span>
+  <span class="BioText">
+    <h2>About Me</h2>
+    <p class="BioTextParagraph">I was born in 1975 in New Jersey.  I currently live in the Des Moines metro in Iowa with my wife and our three children.  I started my career as a software engineer in 1998.  I have developed test tools and frameworks in a variety of programming languages:  Python, C, C++, and Perl.  I have a passion for and specialize in automated test systems.<br /><br />
+  <button>Like</button>
+    </p>
+  </span>
+</div>
+<div class="Contact">
+  <ul>
+    <li>+1 763 442 0075</li>
+    <li><a href="mailto:i.r.dragoo@gmail.com">i.r.dragoo@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/iandragoo/">https://www.linkedin.com/in/iandragoo/</li>
+  </ul>
+</div>
+<script>
+  $('button').on('click', function() {
+    alert('Thanks for the like!');
+  });
+</script>
+</body>
