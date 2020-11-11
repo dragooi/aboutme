@@ -10,7 +10,7 @@
   }
   body {
     background: #0a0a0a;
-      color: white;
+    color: white;
   }
   h1 {
     text-align: center;
@@ -50,6 +50,22 @@
   button {
     float: right;
   }
+	@media (max-width: 500px) {
+		body {
+			max-width: 500px;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			padding: 0 0 20px 0;
+		}
+		.BioTextParagraph {
+			margin: 10px 0 0 0;
+		}
+		li {
+			display: block;
+		}
+	}
 
 </style>
 <title>Introducing Ian Dragoo</title>
@@ -77,8 +93,8 @@
   </ul>
 </div>
 <script>
-  $('button').on('click', function() {
-    alert('Thanks for the like!');
+  $("button").on("click", function() {
+    alert("Thanks for the like!");
   });
 </script>
 </body>
