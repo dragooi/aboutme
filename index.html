@@ -39,14 +39,21 @@
     padding: 0 20px 0 40px;
     margin: 75px 20px 175px 20px;
   }
-  ul {
-      float: center;
-  }
-  li {
-    display: inline;
-    font-size: 24px;  
-    padding: 0 40px 0 40px;
-  }
+	.Contact {
+    /*padding: 0 40px 0 40px;*/
+	}
+	li {
+		display: inline;
+	}
+	.phone {
+		float: left;
+	}
+	.e-mail {
+		padding-left: 33%;
+	}
+	.linkedIn {
+		float: right;
+	}
   button {
     float: right;
   }
@@ -62,8 +69,20 @@
 		.BioTextParagraph {
 			margin: 10px 0 0 0;
 		}
+		.Contact {
+			margin: 50px 0 0 0;
+		}
 		li {
 			display: block;
+		}
+		.e-mail {
+			display: block;
+			float: right;
+			padding-left: 0;
+		}
+		.linkedIn {
+			display: block;
+			float: left;
 		}
 	}
 
@@ -85,12 +104,13 @@
     </p>
   </span>
 </div>
-<div class="Contact">
-  <ul>
-    <li>+1 763 442 0075</li>
-    <li><a href="mailto:i.r.dragoo@gmail.com">i.r.dragoo@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/iandragoo/">https://www.linkedin.com/in/iandragoo/</li>
-  </ul>
+<div>
+	<span class="Contact">
+		<ul>
+			<li class="phone">+1 763 442 0075</li>
+			<li class="e-mail"><a href="mailto:i.r.dragoo@gmail.com">i.r.dragoo@gmail.com</a></li>
+			<li class="linkedIn"><a href="https://www.linkedin.com/in/iandragoo/">https://www.linkedin.com/in/iandragoo/</a></li>
+	</span>
 </div>
 <script>
   $("button").on("click", function() {
